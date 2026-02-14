@@ -69,7 +69,7 @@ def generate_response(level, message):
     # Level 0-2: Mostly English
     if level <= 2:
         if any(x in msg_lower for x in ["hello", "hi", "hey"]):
-            return "Hello. Good to see you."
+            return "Coo-ee. Bona to varda your eek."
         elif any(x in msg_lower for x in ["money", "cash", "pay"]):
             return "No money here."
         elif any(x in msg_lower for x in ["food", "eat", "hungry"]):
@@ -151,3 +151,4 @@ def health():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+
