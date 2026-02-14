@@ -82,7 +82,7 @@ def generate_response(level, message):
     # Level 3-5: Mixed English/Polari
     elif level <= 5:
         if any(x in msg_lower for x in ["hello", "hi", "hey", "bona"]):
-            return "Bona. Good to varda you."
+            return "Bona to varda your eek."
         elif any(x in msg_lower for x in ["money", "cash", "pay", "dinarly"]):
             return "Nanti dinarly here. No money."
         elif any(x in msg_lower for x in ["food", "eat", "hungry", "manjarry"]):
@@ -151,4 +151,5 @@ def health():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+
 
